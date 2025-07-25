@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Screen Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Screen Recorder</h1>
+
+        <div class="controls">
+            <button id="startButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <button id="downloadButton" disabled>Download Video</button>
+        </div>
+
+        <div class="status" id="statusMessage">Ready to record.</div>
+
+        <div class="video-preview">
+            <h2>Recording Preview (Optional)</h2>
+            <video id="previewVideo" autoplay muted></video>
+            <p class="note">The preview shows what's being captured. If you share a tab/window, you'll see it here.</p>
+        </div>
+
+        <div class="recorded-video">
+            <h2>Recorded Video</h2>
+            <video id="recordedVideo" controls></video>
+            <p class="note">Your recorded video will appear here after stopping.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
