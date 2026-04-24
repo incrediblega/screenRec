@@ -1,1 +1,109 @@
-<div></div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Screen Recorder & Screenshot</title>
+  <style>
+    body {
+      width: 300px;
+      margin: 0;
+      padding: 14px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #000000;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #ffffff;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #ffffff;
+    }
+
+    input[type="checkbox"] {
+      accent-color: #ffffff;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      border: 1px solid #ffffff;
+      border-radius: 0;
+      margin-bottom: 10px;
+      font-size: 13px;
+      background: #000000;
+      color: #ffffff;
+      outline: none;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ffffff;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 0;
+      background: #000000;
+      color: #ffffff;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: none;
+      box-shadow: none;
+    }
+
+    button:hover {
+      background: #111111;
+    }
+
+    #shotBtn {
+      background: #000000;
+      border-color: #ffffff;
+    }
+
+    #selectShotBtn {
+      background: #000000;
+      border-color: #ffffff;
+    }
+
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #ffffff;
+      min-height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Screen Recorder & Screenshot</h3>
+
+  <label class="option">
+    <input id="audioToggle" type="checkbox" checked />
+    Record system audio
+  </label>
+
+  <input id="fileName" type="text" value="video" placeholder="File name" />
+
+  <button id="btn">🔴 Start Recording</button>
+  <button id="shotBtn">📸 Take Screenshot</button>
+  <button id="selectShotBtn">🎯 Select Element Screenshot</button>
+  <div id="status">Ready</div>
+
+  <script src="logic.js"></script>
+</body>
+</html>

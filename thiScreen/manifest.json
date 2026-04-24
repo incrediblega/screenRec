@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Recorder",
+  "version": "1.0.0",
+  "description": "Record your screen and save as WebM.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Screen Recorder"
+  }
+}
